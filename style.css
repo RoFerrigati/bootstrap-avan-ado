@@ -1,0 +1,69 @@
+/* Background e Layout */
+body {
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Efeito futurista para o Carousel */
+.carousel-item img {
+    filter: brightness(80%) contrast(120%) saturate(150%);
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-item img:hover {
+    filter: brightness(100%) contrast(130%) saturate(180%);
+}
+
+/* Estilo dos Cards */
+.card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 50px rgba(0, 255, 255, 0.6);
+}
+
+.card-img-top {
+    filter: brightness(60%);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card-img-top:hover {
+    filter: brightness(100%);
+}
+
+/* Títulos e Texto */
+.card-title {
+    font-size: 1.5rem;
+    color: #00ffcc;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .carousel-item img {
+        object-fit: cover;
+    }
+}
+
+/* Estilo para a Navegação do Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00ffcc;
+    border-radius: 50%;
+}
